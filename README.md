@@ -170,7 +170,7 @@ cout <<"\n";
 return 0; 
   }
 
-February 10, 2022: Verifying matches
+February 9, 2022: Verifying matches
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
