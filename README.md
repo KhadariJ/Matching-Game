@@ -265,10 +265,11 @@ February 12, 2022: Finalizing code
 using namespace std;
 int main(){
   //declaring variables 
-  char comma;
+  char comma, answer;
     int r1, c1, r2, c2, cards[5][5];
     srand((unsigned)time(NULL));
     //initialing array 
+    do {
     for (int r=0; r<5; r++)
     {
         for (int c=0; c<5; c++)
@@ -347,6 +348,17 @@ cout <<"\n";
     {
       cout <<"This is not match.";
     }
+       
+ cout << "Do you wish to continue? Input Y/N"<<endl;
+cin >> answer;
+ if (answer == 'y' || answer == 'Y'){
+   cout << "Let's play again!\n";
+    }
+    else if (answer == 'n' || answer == 'N') {
+      cout << "Thanks for playing."<<endl;
+    }
+    }
+    while (answer == 'Y' || answer == 'y');
 return 0; 
   }
 
