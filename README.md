@@ -275,7 +275,6 @@ int main(){
         for (int c=0; c<5; c++)
         {
             cards[r][c]=rand()%9+0;
-            cout <<" "<<cards[r][c];
         }
         cout<<endl;
     }
